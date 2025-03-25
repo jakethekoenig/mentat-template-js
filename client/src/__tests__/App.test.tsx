@@ -30,12 +30,8 @@ describe('App Component', () => {
   it('renders App component correctly', () => {
     render(<App />);
     expect(screen.getByText('Mentat Template JS')).toBeInTheDocument();
-    expect(
-      screen.getByText(/Frontend: React, Vite/)
-    ).toBeInTheDocument();
-    expect(
-      screen.getByText(/Backend: Node.js, Express/)
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Frontend: React, Vite/)).toBeInTheDocument();
+    expect(screen.getByText(/Backend: Node.js, Express/)).toBeInTheDocument();
     expect(
       screen.getByText(/Utilities: Typescript, ESLint, Prettier/)
     ).toBeInTheDocument();
