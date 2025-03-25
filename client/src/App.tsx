@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import mentatLogo from '/mentat.png';
+import Background from './components/Background';
 
 function App() {
   const [message, setMessage] = useState<string | null>(null);
@@ -46,6 +47,7 @@ function App() {
         gap: '1rem',
       }}
     >
+      <Background />
       <div>
         <a href="https://mentat.ai" target="_blank">
           <img src={mentatLogo} className="logo" alt="Mentat logo" />
