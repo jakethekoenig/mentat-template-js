@@ -18,20 +18,17 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install root dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Install client and server dependencies
-        run: npm run install
+      - name: Format code
+        run: npm run format
 
-      - name: Check formatting
-        run: npx prettier --check .
-
-      - name: Lint
+      - name: Lint code
         run: npm run lint
-
-      - name: Run tests
-        run: npm test
 
       - name: Build project
         run: npm run build
+
+      - name: Run tests
+        run: npm test
