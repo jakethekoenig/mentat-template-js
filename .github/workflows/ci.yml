@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
+          # Removed npm caching as we don't track package-lock.json files
 
       - name: Install dependencies
         run: npm install
