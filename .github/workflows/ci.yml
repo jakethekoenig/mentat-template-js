@@ -18,7 +18,10 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install root dependencies
+        run: npm install
+
+      - name: Install client and server dependencies
         run: npm run install
 
       - name: Check formatting
