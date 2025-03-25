@@ -1,3 +1,4 @@
 **/node_modules
 **/dist
 .mentat/logs
+**/package-lock.json
