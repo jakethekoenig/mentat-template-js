@@ -29,12 +29,15 @@ describe('App Component', () => {
 
   it('renders App component correctly', () => {
     render(<App />);
-    expect(screen.getByText('Mentat Javascript Template')).toBeInTheDocument();
+    expect(screen.getByText('Mentat Template JS')).toBeInTheDocument();
     expect(
-      screen.getByText(/Frontend: React, Typescript, Vite/)
+      screen.getByText(/Frontend: React, Vite/)
     ).toBeInTheDocument();
     expect(
-      screen.getByText(/Backend: Node.js, Express, Typescript/)
+      screen.getByText(/Backend: Node.js, Express/)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/Utilities: Typescript, ESLint, Prettier/)
     ).toBeInTheDocument();
   });
 
@@ -64,19 +67,5 @@ describe('App Component', () => {
     await waitFor(() => {
       expect(screen.getByText(/Error: API Error/)).toBeInTheDocument();
     });
-  });
-
-  it('increments counter when button is clicked', async () => {
-    const user = userEvent.setup();
-    render(<App />);
-
-    // Get the button
-    const button = screen.getByText(/count is 0/);
-
-    // Click the button
-    await user.click(button);
-
-    // Check if the count has been incremented
-    expect(screen.getByText(/count is 1/)).toBeInTheDocument();
   });
 });

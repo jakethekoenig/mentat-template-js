@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import mentatLogo from '/mentat.png';
 
 function App() {
-  const [count, setCount] = useState(0);
   const [message, setMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -44,6 +43,7 @@ function App() {
         height: '100vh',
         width: '100vw',
         backgroundColor: '#f0f0f0',
+        gap: '1rem',
       }}
     >
       <div>
@@ -51,17 +51,14 @@ function App() {
           <img src={mentatLogo} className="logo" alt="Mentat logo" />
         </a>
       </div>
-      <h1>Mentat Javascript Template</h1>
+      <h1>Mentat Template JS</h1>
       <ul>
-        <li>Frontend: React, Typescript, Vite</li>
-        <li>Backend: Node.js, Express, Typescript</li>
+        <li>Frontend: React, Vite, Vitest</li>
+        <li>Backend: Node.js, Express, Jest</li>
+        <li>Utilities: Typescript, ESLint, Prettier</li>
       </ul>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-
       <p>
-        <b>Server Message:</b>{' '}
+        <b>Message from server:</b>{' '}
         {loading
           ? 'Loading message from server...'
           : error
