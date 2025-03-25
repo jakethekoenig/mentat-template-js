@@ -23,7 +23,9 @@ function App() {
         setMessage(data.message);
       } catch (err) {
         console.error('Error fetching data:', err);
-        setError(err instanceof Error ? err.message : 'An unknown error occurred');
+        setError(
+          err instanceof Error ? err.message : 'An unknown error occurred'
+        );
       } finally {
         setLoading(false);
       }
@@ -54,7 +56,9 @@ function App() {
         <li>Frontend: React, Typescript, Vite</li>
         <li>Backend: Node.js, Express, Typescript</li>
       </ul>
-      <button onClick={() => setCount(count => count + 1)}>count is {count}</button>
+      <button onClick={() => setCount((count) => count + 1)}>
+        count is {count}
+      </button>
 
       <p>
         <b>Server Message:</b>{' '}
