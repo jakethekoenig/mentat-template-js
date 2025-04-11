@@ -2,71 +2,22 @@
 
 A full-stack JavaScript template project with React frontend and Express backend, both using TypeScript.
 
-## Commands
+## Getting Started
 
-This project uses npm workspaces to manage both client and server packages. The following commands are available at the root level:
+1. Create a new repository using this template. On the [repository page](https://github.com/AbanteAI/mentat-template-js), click "Use this template" on the top right, then select 'Create a new repository'. 
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install dependencies for both client and server |
-| `npm run dev` | Run both client and server in development mode concurrently |
-| `npm run build` | Build both client and server for production |
-| `npm start` | Start the server in production mode (after building) |
-| `npm run lint` | Run ESLint to check code quality |
-| `npm run format` | Run Prettier to format code |
-| `npm run test` | Run tests for both client and server |
+2. On the next screen, choose a name for your project, then click 'Create repository'. 
 
-## Client
+3. Install Mentat on your GitHub account, if you haven't already. See instructions [here](https://mentat.ai/docs).
 
-The client is a React application built with modern tooling:
+4. Add the new repository to your Mentat Installation.
+  
+  a. If you're installing Mentat for the first time, select your new repository on the 'Setup Installation' page.
+  b. If you've already installed Mentat, go to the [settings page](https://mentat.ai/settings) and click 'Manage Repositories', and select your new repository from the drop-down menu to add it to your installation.
 
-### Key Technologies
+5. If Mentat was installed properly, you should see an open GitHub issue in your new repository called 'MentatBot Setup'. This issue will guide you through advanced configuration.
 
-- **React 19**: Latest version of the React library
-- **TypeScript**: For type safety and better developer experience
-- **Vite**: Fast and efficient build tool and development server
-- **Vitest**: Testing framework compatible with Vite
-
-### Client Commands
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with hot reloading |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build locally |
-| `npm test` | Run tests once |
-| `npm run test:watch` | Run tests in watch mode |
-
-### Testing
-
-The client uses a modern testing stack:
-- **Vitest**: Test runner compatible with Jest API
-- **React Testing Library**: For component testing
-- **JSDOM**: Browser-like environment for tests
-
-## Server
-
-The server is an Express.js application written in TypeScript.
-
-### Key Technologies
-
-- **Express**: Web framework for Node.js
-- **TypeScript**: For type safety and better developer experience
-- **ts-node-dev**: For development with hot reloading
-- **Jest**: For testing
-
-### Server Commands
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with hot reloading |
-| `npm run build` | Build for production |
-| `npm start` | Start server in production mode |
-| `npm test` | Run tests once |
-| `npm run test:watch` | Run tests in watch mode |
-
-### Testing
-
-The server uses:
-- **Jest**: Test runner
-- **Supertest**: For HTTP assertions and API testing
+You're all set! You can begin using Mentat by
+- Creating a new issue and tagging '@MentatBot'
+- Pushing PRs to your repository and having Mentat review them
+- Chatting wtih Mentat about your project from the [Mentat website](https://mentat.ai)
